@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+       .buttons{
+        width: 100%;
+        height: 200px;
+
+      background-color: rgb(147, 59, 59);
+       border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+   
+       }
+       button{
+        padding: 1rem;
+        margin: 1rem;
+       }
+       h1{
+        text-align: center;
+       }
+       img{
+        border-radius: 50%;
+       }
+    </style>
+</head>
+<body style="background-color: goldenrod;">
+    <h1 style="background-color:red; " >home page</h1>
+
+   <div class="buttons">
+          <img src="<%=  user  %>" alt="" width="200px" height="200px" >
+    <button> <a href="/signup">Signup</a></button>
+    <button> <a href="/login">Login</a></button>
+    <button> <a href="/main">Main</a></button>
+    <button> <a href="/logout">Logout</a></button>
+    <button> <a href="/password">Password Change</a></button>
+    <button> <a href="/update">update Detailes</a></button>
+   </div>
+    
+</body>
+</html>

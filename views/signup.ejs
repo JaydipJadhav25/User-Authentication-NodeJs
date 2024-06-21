@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+
+    <style>
+        body{
+            background-color: chocolate;
+        }
+        form{
+            display: flex;
+            /* flex-direction: column; */
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+         
+        }
+        h1{
+        text-align: center;
+       }
+
+    </style>
+</head>
+<body>
+     <h1>Sign Up </h1>
+    <form action="/user/signup"  method="post" enctype="multipart/form-data">
+          
+        <label for="name">Fullname :</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email :</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="avatar">Avatar :</label>
+        <input type="file" name="avatar" >
+         
+        <label for="">Password : </label>
+        <input type="text" name="password" required>
+        <input type="submit">
+
+        <button> <a href="/">Home</a></button>
+    </form>
+
+
+    
+</body>
+</html>
